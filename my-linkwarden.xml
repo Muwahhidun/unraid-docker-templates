@@ -24,9 +24,9 @@
   <DonateLink/>
   <Requires>ATTENTION!!!&#xD;
 To work you need postgresql15, with a created database and a user with a password for linkwarden.</Requires>
-  <Config Name="DATABASE_URL" Target="DATABASE_URL" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">postgresql://linkwarden:shamil1988@192.168.99.10:5434/linkwarden</Config>
-  <Config Name="NEXTAUTH_SECRET" Target="NEXTAUTH_SECRET" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">shamil1988</Config>
-  <Config Name="NEXTAUTH_URL" Target="NEXTAUTH_URL" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">http://192.168.99.10:3002</Config>
+  <Config Name="DATABASE_URL" Target="DATABASE_URL" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">postgresql://pg_linkwarden_user:pg_linkwarden_password@pg_ip:pg_port/pg_linkwarden_db</Config>
+  <Config Name="NEXTAUTH_SECRET" Target="NEXTAUTH_SECRET" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">pg_linkwarden_password</Config>
+  <Config Name="NEXTAUTH_URL" Target="NEXTAUTH_URL" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">http://you_server_ip:3002</Config>
   <Config Name="/volume1/docker/linkwarden/data" Target="/volume1/docker/linkwarden/data" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/linkwarden</Config>
   <Config Name="Port" Target="3000" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">3002</Config>
 </Container>
